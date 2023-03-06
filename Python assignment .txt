@@ -1,0 +1,121 @@
+                                                                                        Python Basic Assignment 
+
+                                                                        Assignment -- 1
+
+1. In the below elements which of them are values or an expression? e.g :- values can be integer or string and expressions will     be  mathematical operators.
+    *, 'hello', -86.8, -, /, +, 9
+
+Ans- There are a total 4 operators and 3 expressions, They are :
+         Operators:- *, -, /, +
+         expressions:- 'hello', -86.8, 9
+
+2. What is the difference between string and variable?
+
+Ans- A variable is used to store of information, and variable has some name and address, Identifire is Synonymous or                    another name of variable. String is a immutable data type and it's type of information you would store in a variable. A                 string is a group of character usually enclosed in double quotes "" or single quotes ''
+
+3. Describe three different Data types?
+
+Ans- Three fundamental Data types in python are int(), Float(), Complex(). It will be used for type casting and data type           conversion.
+        1. int data type :- We can use int data type to represent whole numbers (integral values)
+        2. float data type :- we can use float data type to represent floating point values (decimal values)
+       3. complex data type :- Complex number represented by complex class. It is specified as (real part) + (imaginary part)j.
+
+<code> :-
+         # Example for int data type       #Input (In)
+            int_num=456
+        print(int_num, type(int_num))
+     
+       #float data type        #comment represent by hashtag symbol it gives detail about code and it's not execute during run time
+         flo_num=1.2e3
+     print(flo_num, type(flo_num))
+ 
+        #complex data type
+           com_num=10+1.6j
+    print(com_num, type(com_num))      #run or execute  this cell or code  got output (out)
+
+output:- 456 <class 'int'>
+             1200.0 <class 'float'>    
+            (10+1.6j) <class 'complex'>
+
+4. What is an expression made up of? What do all expression do?
+Ans- An expression is a combination of values, variables, operators, and calls to functions. Expressions need to be evaluated.          if we ask python to print an expression, the interpreter evaluates the expression and displays the result.
+
+<code>   4*5+20-40  #is an expression, the Python interpreter evalutes it to zero 
+                 0
+
+5. This assignment statements, like spam = 10. What is the difference between an expression and a statement?
+ans- An expression is a combination of values, variables and operators. When we type an expression at the prompt, the           interpreter evaluates it, which means that it finds the value of the expression.
+  
+   e.g: 4*5+20-40 is an example of statement
+
+ A statement is a unit of code that has an effect, like creating a variable or displaying a value. Where we type a statement, the   
+    interpreter executes it, which means that it does whatever the statement says. In general, statement don't have values.
+e.g: variable declaration and assignment are statement because they don't return a value.
+
+<code>   #Example:
+               4*5+20-40  #Is a expression
+           courseName = 'Aswani fullstack data science'    #Is a statement
+      print("Hello World !")     # Is a Expression statement
+
+output: Hello  World !
+
+6. After running the following code, what does the variable bacon contain?
+     bacon = 22
+     bacon + 1
+Ans- The variable bacon is set to 22. The expression bacon + 1 does not reassign the value in bacon ( that would the case if the           expression is like bacon = bacon + 1 instead of bacon + 1
+
+<code>  #Example case 1
+                     bacon = 22
+                    bacon + 1
+               print(bacon)
+                       22
+#Example case 2
+       bacon = 22 
+       bacon = bacon+1
+   print(bacon)
+         23
+
+7. What should the values of the following two terms be?
+      'spam' + 'spamspam'
+      'spam' *3
+Ans- Both expressions evaluate to the string  'spamspamspam' where as the first expression follows string concatenation and           the second expression follows string multication
+
+<code>  print('spam' + 'spamspam')  #string concatenation 
+                print('spam' * 3)     #string multiplication
+output:
+spamspamspam
+spamspamspam 
+
+8. Why is egg a valid variable name while 100 is invalid?
+Ans- As per python, variable names cannot begin with a number. The python rules for naming a variable are:
+          1. variable name must start with a letter or the underscore character.
+         2. variable name cannot start with a number or  special character  and should not contain any white space
+         3. variable name can only  contain alpha-numeric characters and underscores (A-z, 0-9, &_)
+         4. variable names are case-sensitive (name, Aswani and aswani are three different variable).
+        5. The reserved words (keywords)  cannot be used naming the variable.
+
+<code>     egg = 'aswani'   #Valid variable initiliazation
+                  100 = 'hello'     # Invalid variable initialization
+              print(egg)       # print the value of egg i.e aswani
+                print(100)      #Raise a syntax error as 100 is not a valid variable name
+
+9. What three function can be used to get the integer, floating-point number, or string version of a value?
+ Ans- the int(), float() and str() function will evaluate to the integer, floating-point number, string version of the valued           passed to them. These function is used for type casting or type conversion.
+
+<code>   print('int(10.2))  -> ' int(10.2)  #int() function converts given input to int
+                print('float(10)) ->            #float() function converts given input to float 
+                 print('str(10))  ->    # str function converts given input to string 
+output:-
+    10
+    10.0
+    10
+
+10. Why does this expression cause an error? how can you fix it?
+        'I have eaten ' + 99  +'mangoes'
+Ans- This cause of error is 99 because 99 is not a string. 99 must be typecasted to a string to fix this error. The correct way is :
+         Input : 'I have eaten' + str(99) + 'mangoes'
+         output : I have eaten 99 mangoes
+
+print(' I have eaten + str(99) + 'mangoes') 
+    
+     I have eaten 99 mangoes                                            
